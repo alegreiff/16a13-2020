@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "esteban": {
@@ -66,7 +66,9 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "esteban:build"
+            "browserTarget": "esteban:build",
+            "host": "192.168.1.100",
+            "port": 4201
           },
           "configurations": {
             "production": {
@@ -123,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "esteban"
+    }
+  },
+  "defaultProject": "esteban",
+  "cli": {
+    "analytics": "da5b2ad7-a245-4355-83de-547b89e75c94"
+  }
 }
